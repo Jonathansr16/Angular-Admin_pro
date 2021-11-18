@@ -6,6 +6,10 @@ import { FormsModule } from '@angular/forms'
 import { IncrementadorComponent } from './incrementador/incrementador.component';
 import { GrafDonaComponent } from './graf-dona/graf-dona.component';
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import * as Ngx from '@swimlane/ngx-charts';
+
 @NgModule({
   declarations: [
     IncrementadorComponent,
@@ -13,7 +17,9 @@ import { GrafDonaComponent } from './graf-dona/graf-dona.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    Ngx.NgxChartsModule
   ]
 })
 export class ComponentsModule { }
