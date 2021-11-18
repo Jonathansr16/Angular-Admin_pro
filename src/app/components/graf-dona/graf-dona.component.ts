@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Periodismo } from 'src/app/models/data.models';
 
 @Component({
@@ -8,6 +8,8 @@ import { Periodismo } from 'src/app/models/data.models';
   ]
 })
 export class GrafDonaComponent {
+
+  @Input() title: string = 'Sin titulo';
 
   Periodismo: any[] = [];
   view: [number, number] = [500, 400];

@@ -20,6 +20,10 @@ import * as Ngx from '@swimlane/ngx-charts';
     FormsModule,
     BrowserAnimationsModule,
     Ngx.NgxChartsModule
+  ],
+  exports: [
+    IncrementadorComponent,
+    GrafDonaComponent
   ]
 })
 export class ComponentsModule { }
