@@ -1,12 +1,13 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
+import { NgModule } from '@angular/core';
 
-import { NopagesfoundComponent } from './nopagesfound/nopagesfound.component';
-
+//Modulos
 import { AppRoutingModule } from './routers/app-routing.module';
-import { AuthModule } from './auth/auth.module';
 import { PagesModule } from './pages/pages.module';
+import { AuthModule } from './auth/auth.module';
+
+import { AppComponent } from './app.component';
+import { NopagesfoundComponent } from './nopagesfound/nopagesfound.component';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { PagesModule } from './pages/pages.module';
     PagesModule,
     AuthModule,
   ],
-  providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
