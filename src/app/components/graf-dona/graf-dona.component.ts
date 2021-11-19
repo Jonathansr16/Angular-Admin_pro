@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Periodismo } from 'src/app/models/data.models';
+import { PerdDataService } from 'src/app/services/perd-data.service';
 
 @Component({
   selector: 'app-graf-dona',
@@ -10,8 +10,12 @@ import { Periodismo } from 'src/app/models/data.models';
 export class GrafDonaComponent {
 
   @Input() title: string = 'Sin titulo';
-
-  Periodismo: any[] = [];
+  @Input('labels') label: string[] = ['Label1', 'Label2', 'Label2'];
+  @Input('results') results: Object =  {
+        name: null,
+        number: null
+      }
+  
   view: [number, number] = [500, 400];
 
  // options
@@ -20,13 +24,13 @@ export class GrafDonaComponent {
  showLabels: boolean = true;
  isDoughnut: boolean = false;
 
- colorScheme = {
-  domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
-};
 
-constructor() {
-  Object.assign(this, { Periodismo });
-}
+constructor(private per: PerdDataService) {}
+
+get periodismo2() {
+  return this.per.PerdiodismoData;
+  }
+
 
 onSelect(data: Event): void {
   console.log('Item clicked', JSON.parse(JSON.stringify(data)));
