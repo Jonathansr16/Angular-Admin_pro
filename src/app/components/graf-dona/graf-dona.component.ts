@@ -4,20 +4,18 @@ import { PerdDataService } from 'src/app/services/perd-data.service';
 @Component({
   selector: 'app-graf-dona',
   templateUrl: './graf-dona.component.html',
-  styles: [
-  ]
+  styleUrls: ['./graf-dona.component.css']
 })
 export class GrafDonaComponent {
 
   @Input() title: string = 'Sin titulo';
-  @Input('labels') label: string[] = ['Label1', 'Label2', 'Label2'];
-  @Input('results') results: Object =  {
+  @Input('etiquetas') labels:  [string, string, string] = ["label1", "label2", "label3"];
+  @Input('resultados') results: Object =  {
         name: null,
         number: null
       }
-  
+   
   view: [number, number] = [500, 400];
-
  // options
  gradient: boolean = true;
  showLegend: boolean = true;
