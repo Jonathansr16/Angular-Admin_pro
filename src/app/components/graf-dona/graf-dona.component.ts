@@ -15,7 +15,7 @@ export class GrafDonaComponent {
         number: null
       }
    
-  view: [number, number] = [500, 400];
+  view: [number, number] = [900, 400];
  // options
  gradient: boolean = true;
  showLegend: boolean = true;
