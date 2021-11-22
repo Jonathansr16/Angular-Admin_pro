@@ -10,10 +10,11 @@ import { GrafDonaComponent } from './graf-dona/graf-dona.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import * as Ngx from '@swimlane/ngx-charts';
 
+
 @NgModule({
   declarations: [
     IncrementadorComponent,
-    GrafDonaComponent
+    GrafDonaComponent,
   ],
   imports: [
     CommonModule,
@@ -26,4 +27,5 @@ import * as Ngx from '@swimlane/ngx-charts';
     GrafDonaComponent
   ]
 })
+
 export class ComponentsModule { }
