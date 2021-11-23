@@ -12,8 +12,10 @@ export class SiderbarService {
       icono: 'mdi mdi-gauge',
       submenu: [
         { titulo: 'Main', url: '/' },
-        { titulo: 'progressBarr', url: 'progress'},
-        { titulo: 'Grafica', url: 'grafica'}
+        { titulo: 'Grafica', url: 'grafica' },
+        { titulo: 'progressBarr', url: 'progress' },
+        { titulo: 'Promesas', url: 'promesas' },
+        { titulo: 'Rxjs', url: 'rxjs'}
       ]
     }
   ]
